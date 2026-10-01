@@ -1,24 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 760" preserveAspectRatio="xMidYMid slice">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 750" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8fdff"/>
-      <stop offset="0.55" stop-color="#eef8fc"/>
-      <stop offset="1" stop-color="#f8fcfb"/>
+      <stop offset="0.55" stop-color="#eff9fc"/>
+      <stop offset="1" stop-color="#f8fcfa"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#f4d879" stop-opacity="0"/>
-      <stop offset="1" stop-color="#f4d879" stop-opacity="0.24"/>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c5d0d9" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#d6dee4" stop-opacity="0.62"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7edcf" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e8cf8d" stop-opacity="0.28"/>
     </linearGradient>
   </defs>
-  <rect width="2000" height="760" fill="url(#bg)"/>
-  <g fill="#becbd4" fill-opacity="0.55" stroke="#f8fdff" stroke-width="20" stroke-linejoin="round">
-    <path d="M675-35h310v173l-310 185z"/>
-    <path d="M1010-35h720v188l-355 213-365-219z"/>
-    <path d="M1760-35h290v355l-290-171z"/>
-    <path d="M700 185l300 180v225l-300-181z"/>
-    <path d="M1740 184l310 184v224l-310-182z"/>
-    <path d="M1455 602l285-170 310 184v180h-595z"/>
+  <rect width="2000" height="750" fill="url(#paper)"/>
+  <g fill="url(#silver)" stroke="#f7fcfe" stroke-width="20" stroke-linejoin="round">
+    <path d="M660-52H1007V144Q1007 169 985 182L670 369Q660 375 660 353Z"/>
+    <path d="M1015-50H1278L1282-12L1057 128Q1014 154 1015 105Z"/>
+    <path d="M1272-47H1495L1738 102L1492 248L1263 106Q1243 94 1262 81L1272 74Z"/>
+    <path d="M1750-45H2032V371L1766 207Q1750 197 1750 176Z"/>
+    <path d="M688 212L1007 403V565Q1007 582 992 573L692 395Q678 387 678 369V231Q678 206 688 212Z"/>
+    <path d="M1760 216L2036 380V568L1767 409Q1750 399 1750 378V235Q1750 210 1760 216Z"/>
+    <path d="M1442 705L1738 529L2035 705V790H1442Z"/>
   </g>
-  <path d="M1810 510h190v250h-310z" fill="url(#gold)"/>
-  <path d="M0 440h1445" stroke="#fff" stroke-width="2" opacity="0.9"/>
+  <path d="M1810 492L2000 605V750H1652Z" fill="url(#warm)"/>
+  <path d="M0 438H1444" fill="none" stroke="#fff" stroke-width="2" opacity="0.92"/>
 </svg>

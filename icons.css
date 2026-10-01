@@ -3,3 +3,29 @@
   stroke: #f4b514 !important;
   stroke-width: 4 !important;
 }
+
+.reason-grid svg {
+  width: 74px;
+  height: 74px;
+  stroke-width: 3.2;
+}
+
+.reason-grid .reason-gold {
+  fill: #f4b514;
+  stroke: #f4b514;
+}
+
+.reason-grid .reason-white {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+}
+
+.reason-grid h3 {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+.reason-grid p span {
+  display: block;
+}

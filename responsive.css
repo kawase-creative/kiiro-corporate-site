@@ -123,6 +123,39 @@
   .strength .english-copy {
     margin-left: 48px;
   }
+
+  .reason-grid {
+    gap: 10px;
+  }
+
+  .reason-grid article {
+    min-width: 0;
+    min-height: 330px;
+    padding: 16px 14px 24px;
+  }
+
+  .reason-grid article > b {
+    font-size: 21px;
+  }
+
+  .reason-grid svg {
+    width: 66px;
+    height: 66px;
+    margin-bottom: 6px;
+  }
+
+  .reason-grid h3 {
+    margin: 8px 0 14px;
+    font-size: 17px;
+    letter-spacing: -.03em;
+  }
+
+  .reason-grid p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.75;
+    letter-spacing: -.025em;
+  }
 }
 
 @media (min-width: 761px) and (max-width: 1180px) {

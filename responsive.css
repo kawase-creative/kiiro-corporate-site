@@ -1,0 +1,81 @@
+/* 1440pxを基準に、横長ではないPC画面でもキービジュアル全体を見せる */
+@media (min-width: 761px) {
+  .hero-visual {
+    align-items: center;
+    background: linear-gradient(135deg, #f7fbff, #edf7fd);
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1700px) {
+  .site-header {
+    height: 96px;
+  }
+
+  .header-inner {
+    max-width: 1500px;
+    padding-inline: 3.5vw;
+  }
+
+  .brand-logo {
+    width: 180px;
+  }
+
+  .global-nav {
+    gap: 2vw;
+  }
+
+  .global-nav a {
+    padding-block: 31px;
+  }
+
+  .global-nav a::after {
+    bottom: 20px;
+  }
+
+  .header-contact {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    min-height: 560px;
+    grid-template-columns: 44% 56%;
+  }
+
+  .hero-copy {
+    padding: 44px 3vw 34px 5vw;
+  }
+
+  .hero h1 {
+    font-size: clamp(48px, 4.15vw, 66px);
+    margin-bottom: 18px;
+  }
+
+  .hero-copy > p:not(.eyebrow) {
+    font-size: 17px;
+    line-height: 1.85;
+    margin-block: 10px;
+  }
+
+  .hero .cta {
+    min-height: 62px;
+    padding-inline: 44px;
+    font-size: 18px;
+  }
+
+  .notice {
+    height: 78px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .hero-visual {
+    padding-block: 24px;
+  }
+}

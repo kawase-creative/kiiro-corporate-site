@@ -1,4 +1,8 @@
 /* 1440pxを基準に、横長ではないPC画面でもキービジュアル全体を見せる */
+.break-1280 {
+  display: none;
+}
+
 @media (min-width: 761px) {
   .hero-visual {
     align-items: center;
@@ -105,6 +109,10 @@
   .strength .section-heading h2 {
     font-size: 40px;
     white-space: nowrap;
+  }
+
+  .strength .section-heading .break-1280 {
+    display: block;
   }
 
   .strength-main > h2 {

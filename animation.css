@@ -1,0 +1,139 @@
+/* 控えめなスクロール演出。JSが有効な場合だけ初期状態を隠す。 */
+.motion-ready .motion-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.75s ease,
+    transform 0.9s cubic-bezier(0.2, 0.65, 0.3, 1);
+  transition-delay: var(--motion-delay, 0ms);
+}
+
+.motion-ready .motion-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motion-ready .section-heading.motion-reveal i {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.8s 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-ready .section-heading.centered.motion-reveal i {
+  transform-origin: center;
+}
+
+.motion-ready .section-heading.motion-reveal.is-visible i {
+  transform: scaleX(1);
+}
+
+.motion-ready .site-header {
+  animation: kiiro-header-in 0.7s both ease-out;
+}
+
+.motion-ready .hero-copy > * {
+  opacity: 0;
+  animation: kiiro-hero-in 0.85s both cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+.motion-ready .hero-copy > :nth-child(2) { animation-delay: 0.08s; }
+.motion-ready .hero-copy > :nth-child(3) { animation-delay: 0.16s; }
+.motion-ready .hero-copy > :nth-child(4) { animation-delay: 0.22s; }
+.motion-ready .hero-copy > :nth-child(5) { animation-delay: 0.3s; }
+
+.motion-ready .hero-visual {
+  opacity: 0;
+  animation: kiiro-visual-in 1.15s 0.12s both cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-ready .notice {
+  opacity: 0;
+  animation: kiiro-hero-in 0.7s 0.48s both ease-out;
+}
+
+.trouble-grid article,
+.reason-grid article,
+.service-grid article,
+.flow-list li {
+  transition:
+    opacity 0.75s ease,
+    transform 0.9s cubic-bezier(0.2, 0.65, 0.3, 1),
+    box-shadow 0.3s ease;
+}
+
+.trouble-grid article svg,
+.reason-grid article svg,
+.service-grid article svg {
+  transition: transform 0.35s ease;
+}
+
+.cta span,
+.header-contact span:last-child {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cta:hover span,
+.header-contact:hover span:last-child {
+  transform: translateX(5px);
+}
+
+.faq-list details {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-list details[open] {
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(8, 48, 92, 0.06);
+}
+
+@media (hover: hover) {
+  .trouble-grid article:hover,
+  .reason-grid article:hover,
+  .service-grid article:hover,
+  .flow-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(8, 48, 92, 0.1);
+  }
+
+  .trouble-grid article:hover svg,
+  .reason-grid article:hover svg,
+  .service-grid article:hover svg {
+    transform: scale(1.045);
+  }
+}
+
+@keyframes kiiro-header-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes kiiro-hero-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes kiiro-visual-in {
+  from { opacity: 0; transform: scale(0.985); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready *,
+  .motion-ready *::before,
+  .motion-ready *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .motion-ready .motion-reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .motion-ready .section-heading.motion-reveal i {
+    transform: scaleX(1);
+  }
+}

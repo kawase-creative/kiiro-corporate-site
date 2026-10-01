@@ -1,3 +1,5 @@
+document.documentElement.classList.add('motion-ready');
+
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('.global-nav');
 
@@ -40,4 +42,51 @@ if (query.get('sent') === '1') {
   toast.classList.add('is-visible');
   window.history.replaceState({}, '', `${window.location.pathname}${window.location.hash}`);
   window.setTimeout(() => toast.classList.remove('is-visible'), 7000);
+}
+
+const motionSelectors = [
+  '.section-heading',
+  '.strength-main > h2',
+  '.strength-main > .lead',
+  '.business-title > p',
+  '.trouble-grid article',
+  '.reason-grid article',
+  '.service-grid article',
+  '.flow-list li',
+  '.faq-list details',
+  '.president-message',
+  '.contact-panel > div',
+  '.message-motto',
+  '.footer-main > *'
+];
+
+const motionElements = [...document.querySelectorAll(motionSelectors.join(','))];
+motionElements.forEach((element) => element.classList.add('motion-reveal'));
+
+[
+  '.trouble-grid article',
+  '.reason-grid article',
+  '.service-grid article',
+  '.flow-list li',
+  '.faq-list details',
+  '.contact-panel > *',
+  '.footer-main > *'
+].forEach((selector) => {
+  document.querySelectorAll(selector).forEach((element, index) => {
+    element.style.setProperty('--motion-delay', `${Math.min(index, 5) * 65}ms`);
+  });
+});
+
+if ('IntersectionObserver' in window) {
+  const motionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      motionObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
+
+  motionElements.forEach((element) => motionObserver.observe(element));
+} else {
+  motionElements.forEach((element) => element.classList.add('is-visible'));
 }

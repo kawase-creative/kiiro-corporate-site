@@ -29,3 +29,32 @@
 .reason-grid p span {
   display: block;
 }
+
+/* Supplied artwork is used unchanged; contain preserves the original proportions. */
+.reference-icon {
+  display: block;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.reason-grid .reference-icon {
+  width: 100px;
+  height: 74px;
+  margin: 0 auto 8px;
+}
+.service-grid .reference-icon {
+  width: 126px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+}
+.trouble-grid .reference-icon {
+  width: 90px;
+  height: 62px;
+}
+@media (min-width: 1181px) and (max-width: 1400px) {
+  .reason-grid .reference-icon { margin-bottom: 2px; }
+}
+@media (max-width: 760px) {
+  .service-grid .reference-icon { width: 98px; height: 62px; }
+  .trouble-grid .reference-icon { width: 70px; height: 46px; }
+}

@@ -74,6 +74,49 @@
   }
 }
 
+/* 1280px前後では、日本語見出しを単語の途中で折り返さない */
+@media (min-width: 1181px) and (max-width: 1400px) {
+  .section-heading h2,
+  .strength-main > h2 {
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  .trouble {
+    grid-template-columns: 25% 75%;
+    padding-inline: 4vw;
+  }
+
+  .trouble .section-heading h2 {
+    font-size: 42px;
+    white-space: nowrap;
+  }
+
+  .trouble .hand-note {
+    display: none;
+  }
+
+  .strength {
+    grid-template-columns: 29% 71%;
+    gap: 18px;
+    padding-inline: 4vw;
+  }
+
+  .strength .section-heading h2 {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+  .strength-main > h2 {
+    font-size: 42px;
+    white-space: nowrap;
+  }
+
+  .strength .english-copy {
+    margin-left: 48px;
+  }
+}
+
 @media (min-width: 761px) and (max-width: 1180px) {
   .hero-visual {
     padding-block: 24px;

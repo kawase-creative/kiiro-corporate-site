@@ -4,6 +4,16 @@
 }
 
 @media (min-width: 761px) {
+  .strength {
+    background: #f1f8fc url("assets/strength-bg.svg") center / 100% 100% no-repeat;
+  }
+
+  .strength::before {
+    background: none;
+  }
+}
+
+@media (min-width: 761px) {
   .hero-visual {
     align-items: center;
     background: linear-gradient(135deg, #f7fbff, #edf7fd);
@@ -121,7 +131,12 @@
   }
 
   .strength .english-copy {
-    margin-left: 48px;
+    margin-top: 90px;
+    margin-left: 93px;
+  }
+
+  .strength .about-copy .section-heading {
+    margin-left: 50px;
   }
 
   .reason-grid {
@@ -139,9 +154,9 @@
   }
 
   .reason-grid svg {
-    width: 66px;
-    height: 66px;
-    margin-bottom: 6px;
+    width: 74px;
+    height: 74px;
+    margin-bottom: 2px;
   }
 
   .reason-grid h3 {

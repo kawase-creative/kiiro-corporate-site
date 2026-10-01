@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1000">
+  <defs>
+    <linearGradient id="base" x2="0.8" y2="1"><stop stop-color="#f5fcfd"/><stop offset="1" stop-color="#f0fafc"/></linearGradient>
+  </defs>
+  <path fill="url(#base)" d="M0 0h2000v747H0z"/>
+  <path fill="#fff" d="M0 747h2000v253H0z"/>
+  <!-- Rounded, separated facets measured against the supplied 2000×1000 artwork. -->
+  <g>
+    <path fill="#d3dee5" d="M668 0h335v145q0 28-25 43L709 343q-41 20-41-27Z"/>
+    <path fill="#d3dee5" d="M1021 0h252l-216 125q-36 17-36-25Z"/>
+    <path fill="#dfe8ec" d="M1494 0h241v94q0 40-34 23Z"/>
+    <path fill="#d3dee5" d="M1757 0h243v321l-218-129q-25-14-25-42Z"/>
+    <path fill="#e0e8ec" d="m955 227-248 144q-28 17 1 35l249 144q40 23 40-21V246q0-40-42-19Z"/>
+    <path fill="#e0e8ec" d="m1802 227 198 117v132l-195 113q-39 22-39-22V248q0-42 36-21Z"/>
+    <path fill="#eeeadd" fill-opacity=".7" d="m1785 626 215-126v384l-215 125q-28 16-28-24V678q0-36 28-52Z"/>
+    <path fill="#cfd9e3" fill-opacity=".86" d="m1695 711-230 137q-36 22 0 43l277 163V732q0-44-47-21Z"/>
+    <path fill="#daddE5" d="m1433 899 235 137h-527l234-137q29-17 58 0Z"/>
+  </g>
+  <path d="M0 438h1444m254 0h302" stroke="#fff" stroke-width="2"/>
+</svg>

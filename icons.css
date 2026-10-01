@@ -21,6 +21,14 @@
   stroke-width: 4;
 }
 
+.service-grid .excavator-bucket {
+  fill: none;
+  stroke: #f4b514;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .reason-grid h3 {
   white-space: nowrap;
   word-break: keep-all;

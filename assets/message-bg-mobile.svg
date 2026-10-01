@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1800">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fcfe"/>
+      <stop offset="0.55" stop-color="#eef8fb"/>
+      <stop offset="1" stop-color="#f7fcfb"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cbd6df" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#dde6eb" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e3e9" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#cbd8e2" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7df" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ead496" stop-opacity=".26"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="430" height="1800" fill="url(#paper)"/>
+
+  <!-- The reference's connected facets, rearranged for a narrow canvas. -->
+  <g stroke="#f7fcfe" stroke-width="8" stroke-linejoin="round">
+    <path fill="url(#cool)" d="M275-12h159v172L307 86q-32-19-32-52Z"/>
+    <path fill="url(#soft)" d="m337 132 97 57v184l-98-58q-18-11-18-35V167q0-46 19-35Z"/>
+    <path fill="url(#soft)" d="m399 394 35 21v235l-99-58q-18-11-18-34V490q0-19 17-29Z"/>
+
+    <path fill="url(#soft)" d="M-32 620 87 550q20-12 20 13v184q0 23-20 35L-32 852Z"/>
+    <path fill="url(#cool)" d="M-30 875 93 803q21-12 21 14v189q0 22-19 33l-125 74Z"/>
+
+    <path fill="url(#soft)" d="m374 1000 60 35v233l-111-65q-18-11-18-34v-79q0-21 18-32Z"/>
+    <path fill="url(#cool)" d="m363 1233 71 42v245l-119-70q-18-11-18-34v-90q0-23 20-35Z"/>
+
+    <path fill="url(#soft)" d="M-28 1455 92 1384q20-12 20 14v172q0 23-20 35l-120 71Z"/>
+    <path fill="url(#soft)" d="m290 1630 144-85v255H173l102-60q30-18 15-110Z"/>
+  </g>
+
+  <path fill="url(#warm)" d="m349 1465 85-50v385H286l63-37Z"/>
+  <path d="M0 960h430" stroke="#fff" stroke-width="2" opacity=".95"/>
+</svg>

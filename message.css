@@ -241,7 +241,7 @@ footer::before {
   .message {
     min-height: 0;
     padding: 70px 22px 50px;
-    background-position: 56% center;
+    background: #f1f9fc url("assets/message-bg-mobile.svg") center top / 100% auto no-repeat;
   }
 
   .message-top,

@@ -7,25 +7,20 @@
   <title>株式会社希色｜建設の「困った」を、つなぐ。</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23042b64' d='M32 3 57 17v30L32 61 7 47V17z'/%3E%3Cpath fill='white' d='m32 13 16 9v19l-16 9-16-9V22z'/%3E%3Cpath fill='%23eeb52b' d='M48 41v10l-9 5V46z'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="icons.css">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="希色 ホーム">
-        <svg class="brand-mark" viewBox="0 0 80 82" aria-hidden="true">
-          <polygon points="40,2 60,14 40,26" fill="#27466b"/><polygon points="40,2 40,26 20,38 20,14" fill="#062d66"/>
-          <polygon points="61,15 76,24 76,46 61,37" fill="#153d70"/><polygon points="20,38 40,50 20,62 5,53 5,31" fill="#082f68"/>
-          <polygon points="40,50 60,38 75,47 75,59 55,71" fill="#062d66"/><polygon points="55,71 40,80 20,68 20,62 40,50" fill="#123966"/>
-          <polygon points="61,60 75,52 75,68 60,77" fill="#d8a831"/>
-        </svg>
-        <span class="brand-type"><b>希 色</b><em>KIIRO</em><small>建設の「困った」を、つなぐ。</small></span>
+        <img class="brand-logo" src="assets/kiiro-logo.png" alt="希色 KIIRO 建設の「困った」を、つなぐ。">
       </a>
       <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="global-nav" aria-label="メインナビゲーション">
         <a class="is-active" href="#top">ホーム</a><a href="#about">私たちについて</a><a href="#business">事業内容</a><a href="#flow">ご依頼の流れ</a><a href="#faq">よくあるご質問</a><a href="#company">会社情報</a>
       </nav>
-      <a class="header-contact" href="mailto:info@kiiro.co.jp"><span class="mail-icon">✉</span>お問い合わせ <span aria-hidden="true">→</span></a>
+      <button class="header-contact js-open-contact" type="button"><span class="mail-icon">✉</span>お問い合わせ <span aria-hidden="true">→</span></button>
     </div>
   </header>
 
@@ -36,7 +31,7 @@
         <h1 id="hero-title">建設の「困った」を<br>つなぐ。</h1>
         <div class="gold-stroke"></div>
         <p>解体、内装、リフォーム、塗装、外構、残置物撤去、<br class="desktop-only">遺品整理など、建物に関するさまざまなお悩みに対して、<br class="desktop-only">最適な専門業者や仕事をつなぎ、解決までサポートします。<br>まずは、希色にご相談ください。</p>
-        <a class="cta cta-gold" href="mailto:info@kiiro.co.jp">まずは相談してみる <span aria-hidden="true">→</span></a>
+        <button class="cta cta-gold js-open-contact" type="button">まずは相談してみる <span aria-hidden="true">→</span></button>
       </div>
       <div class="hero-visual"><img src="assets/hero-collage.png" alt="握手、住宅、街並みを組み合わせた希色のキービジュアル"></div>
     </section>
@@ -110,19 +105,44 @@
       </div>
       <div class="contact-panel">
         <div><h2>建設の「困った」をつなぐ。</h2><p>人・企業・技術をつなぎ、それぞれの得意をひとつの力に。</p></div>
-        <div class="contact-action"><a class="cta cta-gold" href="mailto:info@kiiro.co.jp">✉　お問い合わせ　→</a><b>まずはお気軽にご相談ください。</b></div>
+        <div class="contact-action"><button class="cta cta-gold js-open-contact" type="button">✉　お問い合わせ　→</button><b>まずはお気軽にご相談ください。</b></div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-main">
-      <a class="brand footer-brand" href="#top" aria-label="希色 ホーム"><svg class="brand-mark" viewBox="0 0 80 82" aria-hidden="true"><polygon points="40,2 60,14 40,26" fill="#27466b"/><polygon points="40,2 40,26 20,38 20,14" fill="#062d66"/><polygon points="61,15 76,24 76,46 61,37" fill="#153d70"/><polygon points="20,38 40,50 20,62 5,53 5,31" fill="#082f68"/><polygon points="40,50 60,38 75,47 75,59 55,71" fill="#062d66"/><polygon points="55,71 40,80 20,68 20,62 40,50" fill="#123966"/><polygon points="61,60 75,52 75,68 60,77" fill="#d8a831"/></svg><span class="brand-type"><b>希 色</b><em>KIIRO</em><small>建設の「困った」を、つなぐ。</small></span></a>
+      <a class="brand footer-brand" href="#top" aria-label="希色 ホーム"><img class="brand-logo" src="assets/kiiro-logo.png" alt="希色 KIIRO 建設の「困った」を、つなぐ。"></a>
       <nav aria-label="フッターナビゲーション"><a href="#top">ホーム</a><a href="#about">私たちについて</a><a href="#business">事業内容</a><a href="#flow">ご依頼の流れ</a><a href="#faq">よくあるご質問</a></nav>
       <address><a href="tel:0443877276">☎　044-387-7276</a><small>平日 8:00 - 17:00</small><a href="mailto:info@kiiro.co.jp">✉　info@kiiro.co.jp</a></address>
     </div>
     <div class="footer-bottom"><span>© 2026 希色株式会社. All rights reserved.</span><a href="#top">↑ ページ上部へ</a></div>
   </footer>
+
+  <dialog class="contact-modal" id="contact-form" aria-labelledby="contact-title">
+    <div class="modal-head">
+      <div><span>CONTACT</span><h2 id="contact-title">まずはご相談ください</h2></div>
+      <button class="modal-close" type="button" aria-label="フォームを閉じる">×</button>
+    </div>
+    <p class="modal-intro">建物に関するお悩みをお聞かせください。内容を確認後、担当者よりご連絡します。</p>
+    <form action="https://formsubmit.co/info@kiiro.co.jp" method="POST">
+      <input type="hidden" name="_subject" value="【希色ウェブサイト】新しいご相談">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://kawase-creative.github.io/kiiro-corporate-site/?sent=1">
+      <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+      <label class="form-field"><span>お悩み <b>必須</b></span><select name="お悩み" required><option value="">選択してください</option><option>解体</option><option>内装</option><option>リフォーム</option><option>塗装</option><option>外構</option><option>残置物撤去</option><option>遺品整理</option><option>その他</option></select></label>
+      <div class="form-row">
+        <label class="form-field"><span>お名前 <b>必須</b></span><input type="text" name="お名前" autocomplete="name" required placeholder="例）希色 太郎"></label>
+        <label class="form-field"><span>メールアドレス <b>必須</b></span><input type="email" name="email" autocomplete="email" required placeholder="例）info@example.jp"></label>
+      </div>
+      <label class="form-field"><span>電話番号</span><input type="tel" name="電話番号" autocomplete="tel" inputmode="tel" placeholder="例）044-000-0000"></label>
+      <label class="form-field"><span>その他メッセージ</span><textarea name="その他メッセージ" rows="5" placeholder="ご相談内容やご希望の時期などをご記入ください。"></textarea></label>
+      <p class="form-note">入力内容は、ご相談への回答にのみ使用します。</p>
+      <button class="form-submit" type="submit">入力内容を送信する <span aria-hidden="true">→</span></button>
+    </form>
+  </dialog>
+  <div class="success-toast" role="status" aria-live="polite">お問い合わせを送信しました。担当者からのご連絡をお待ちください。</div>
 
   <svg class="svg-defs" aria-hidden="true">
     <defs>
@@ -131,14 +151,14 @@
       <symbol id="icon-people" viewBox="0 0 64 64"><circle cx="32" cy="17" r="9"/><circle cx="12" cy="25" r="6"/><circle cx="52" cy="25" r="6"/><path d="M19 52V40c0-7 6-12 13-12s13 5 13 12v12zM3 50V40c0-5 4-9 9-9 3 0 6 1 8 4M61 50V40c0-5-4-9-9-9-3 0-6 1-8 4"/></symbol>
       <symbol id="icon-layers" viewBox="0 0 64 64"><path d="m10 21 22 13 22-13L32 8zM10 33l22 13 22-13M10 45l22 13 22-13"/></symbol>
       <symbol id="icon-home" viewBox="0 0 64 64"><path d="M8 30 32 9l24 21M14 27v29h36V27M27 56V39h10v17"/></symbol>
-      <symbol id="icon-building" viewBox="0 0 64 64"><path d="M12 56V25h17v31M29 56V8h23v48M5 56h54M18 34h6M18 45h6M37 18h7M37 30h7M37 42h7"/></symbol>
+      <symbol id="icon-building" viewBox="0 0 64 64"><path d="M12 56V25h17v31M29 56V8h23v48M5 56h54M18 34h6M18 45h6M37 18h7M37 30h7M37 42h7"/><path class="icon-gold" d="M18 34h6M37 18h7M37 42h7"/></symbol>
       <symbol id="icon-handshake" viewBox="0 0 64 64"><path d="m6 18 10-8 8 10-10 8zM58 18l-10-8-8 10 10 8zM19 24l10-8c3-2 6-1 8 1l8 8M16 27l6 6 15 15c3 3 8-1 5-4 3 3 8-2 4-5 4 3 8-2 4-5M23 48l-2 2c-4 4-9-1-5-5-4 4-9-1-5-5l10-10"/></symbol>
       <symbol id="icon-check" viewBox="0 0 64 64"><rect x="10" y="7" width="36" height="49" rx="3"/><path d="M18 19h21M18 29h17M18 39h14"/><circle cx="47" cy="46" r="13" class="gold-fill"/><path d="m41 46 4 4 8-10" class="white-stroke"/></symbol>
       <symbol id="icon-chart" viewBox="0 0 64 64"><path d="M6 57h53M12 53V36h10v17M27 53V24h10v29M42 53V10h10v43"/></symbol>
-      <symbol id="icon-truck" viewBox="0 0 64 64"><path d="M5 15h34v30H5zM39 25h12l8 11v9H39zM45 28v9h12M12 45a7 7 0 1 0 14 0M44 45a7 7 0 1 0 14 0"/></symbol>
-      <symbol id="icon-roller" viewBox="0 0 64 64"><rect x="10" y="10" width="40" height="16" rx="4"/><path d="M50 18h6v12H32v8M32 38v19"/></symbol>
-      <symbol id="icon-fence" viewBox="0 0 64 64"><path d="M8 56V21l7-9 7 9v35M24 56V21l7-9 7 9v35M40 56V21l7-9 7 9v35M4 31h56M4 45h56"/></symbol>
-      <symbol id="icon-excavator" viewBox="0 0 64 64"><path d="M8 53h28a6 6 0 0 0 0-12H8a6 6 0 0 0 0 12ZM18 40l15-22 12 10M33 18l7-9 16 15-7 9M49 33c10 3 10 13 1 17"/></symbol>
+      <symbol id="icon-truck" viewBox="0 0 64 64"><path d="M5 15h34v30H5zM39 25h12l8 11v9H39zM45 28v9h12M12 45a7 7 0 1 0 14 0M44 45a7 7 0 1 0 14 0"/><path class="icon-gold" d="M8 35h28"/></symbol>
+      <symbol id="icon-roller" viewBox="0 0 64 64"><rect x="10" y="10" width="40" height="16" rx="4"/><rect class="icon-gold" x="15" y="14" width="30" height="8" rx="2"/><path d="M50 18h6v12H32v8M32 38v19"/></symbol>
+      <symbol id="icon-fence" viewBox="0 0 64 64"><path d="M8 56V21l7-9 7 9v35M24 56V21l7-9 7 9v35M40 56V21l7-9 7 9v35M4 31h56M4 45h56"/><path class="icon-gold" d="M24 25v25M40 25v25"/></symbol>
+      <symbol id="icon-excavator" viewBox="0 0 64 64"><path d="M8 53h28a6 6 0 0 0 0-12H8a6 6 0 0 0 0 12ZM18 40l15-22 12 10M33 18l7-9 16 15-7 9M49 33c10 3 10 13 1 17"/><path class="icon-gold" d="M50 34c8 3 8 11 1 15"/></symbol>
     </defs>
   </svg>
   <script src="script.js"></script>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 760" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fdff"/>
+      <stop offset="0.55" stop-color="#eef8fc"/>
+      <stop offset="1" stop-color="#f8fcfb"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4d879" stop-opacity="0"/>
+      <stop offset="1" stop-color="#f4d879" stop-opacity="0.24"/>
+    </linearGradient>
+  </defs>
+  <rect width="2000" height="760" fill="url(#bg)"/>
+  <g fill="#becbd4" fill-opacity="0.55" stroke="#f8fdff" stroke-width="20" stroke-linejoin="round">
+    <path d="M675-35h310v173l-310 185z"/>
+    <path d="M1010-35h720v188l-355 213-365-219z"/>
+    <path d="M1760-35h290v355l-290-171z"/>
+    <path d="M700 185l300 180v225l-300-181z"/>
+    <path d="M1740 184l310 184v224l-310-182z"/>
+    <path d="M1455 602l285-170 310 184v180h-595z"/>
+  </g>
+  <path d="M1810 510h190v250h-310z" fill="url(#gold)"/>
+  <path d="M0 440h1445" stroke="#fff" stroke-width="2" opacity="0.9"/>
+</svg>

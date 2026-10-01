@@ -1,0 +1,213 @@
+.message {
+  min-height: 680px;
+  padding: 72px 4.5vw 54px;
+  background: #f1f9fc url("assets/message-bg.svg") center/cover no-repeat;
+}
+
+.message-top {
+  grid-template-columns: 48% 52%;
+  gap: 36px;
+  max-width: 1840px;
+  margin: 0 auto 52px;
+}
+
+.message .section-heading h2 {
+  font-size: clamp(42px, 3.45vw, 62px);
+  white-space: nowrap;
+}
+
+.president-message {
+  max-width: 670px;
+  font-size: 17px;
+  line-height: 1.95;
+}
+
+.contact-panel {
+  grid-template-columns: minmax(520px, 1.3fr) minmax(390px, 0.95fr) 150px;
+  gap: 32px;
+  max-width: 1840px;
+  padding-top: 48px;
+}
+
+.contact-panel > div:first-child h2 {
+  display: inline-block;
+  font-size: clamp(33px, 3vw, 52px);
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.contact-panel > div:first-child p {
+  margin: 16px 0 0;
+  font-size: clamp(16px, 1.35vw, 21px);
+  white-space: nowrap;
+}
+
+.contact-action {
+  min-width: 0;
+  padding-inline: 28px;
+}
+
+.contact-action .cta {
+  width: 100%;
+  min-width: 0;
+  max-width: 500px;
+  padding-inline: 28px;
+  white-space: nowrap;
+}
+
+.message-motto {
+  align-self: center;
+  padding-left: 24px;
+  border-left: 1px solid #9eb2ca;
+  color: #7992b5;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.18em;
+  white-space: nowrap;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  right: -90px;
+  bottom: 22px;
+  width: 420px;
+  height: 190px;
+  background: rgba(189, 202, 214, 0.42);
+  clip-path: polygon(42% 0, 100% 0, 100% 100%, 0 100%, 0 66%);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.footer-main,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1181px) and (max-width: 1400px) {
+  .message {
+    padding-inline: 4vw;
+  }
+
+  .message-top {
+    grid-template-columns: 47% 53%;
+  }
+
+  .message .section-heading h2 {
+    font-size: 43px;
+  }
+
+  .president-message {
+    font-size: 15px;
+  }
+
+  .contact-panel {
+    grid-template-columns: minmax(500px, 1.25fr) minmax(350px, 0.9fr) 125px;
+    gap: 20px;
+  }
+
+  .contact-panel > div:first-child h2 {
+    font-size: 36px;
+  }
+
+  .contact-panel > div:first-child p {
+    font-size: 16px;
+  }
+
+  .contact-action {
+    padding-inline: 18px;
+  }
+
+  .contact-action .cta {
+    font-size: 17px;
+    padding-inline: 20px;
+  }
+
+  .message-motto {
+    padding-left: 16px;
+    font-size: 12px;
+  }
+
+  .footer-main {
+    grid-template-columns: 220px minmax(0, 1fr) 240px;
+    gap: 18px;
+    padding: 30px 3vw;
+  }
+
+  .footer-brand .brand-logo {
+    width: 190px;
+  }
+
+  .footer-main nav {
+    gap: 16px;
+    white-space: nowrap;
+  }
+
+  .footer-main nav a {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .footer-main address {
+    white-space: nowrap;
+  }
+
+  .footer-main address a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1180px) and (min-width: 761px) {
+  .message .section-heading h2 {
+    font-size: 39px;
+  }
+
+  .contact-panel {
+    grid-template-columns: minmax(450px, 1.2fr) minmax(320px, 0.8fr);
+  }
+
+  .contact-panel > div:first-child h2 {
+    font-size: 32px;
+  }
+
+  .contact-panel > div:first-child p {
+    font-size: 15px;
+  }
+
+  .message-motto {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .message {
+    min-height: 0;
+    padding: 70px 22px 50px;
+    background-position: 56% center;
+  }
+
+  .message-top,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .message .section-heading h2 {
+    font-size: 36px;
+    white-space: nowrap;
+  }
+
+  .contact-panel > div:first-child h2,
+  .contact-panel > div:first-child p {
+    white-space: normal;
+  }
+
+  .message-motto {
+    display: none;
+  }
+}

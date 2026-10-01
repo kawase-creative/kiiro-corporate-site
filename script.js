@@ -19,7 +19,10 @@ const navLinks = [...nav.querySelectorAll('a')];
 const observer = new IntersectionObserver((entries) => {
   const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
   if (!visible) return;
-  navLinks.forEach((link) => link.classList.toggle('is-active', link.getAttribute('href') === `#${visible.target.id}`));
+  navLinks.forEach((link) => {
+    if (link.hasAttribute('aria-current')) return;
+    link.classList.toggle('is-active', link.getAttribute('href') === `#${visible.target.id}`);
+  });
 }, { rootMargin: '-20% 0px -65%', threshold: [0, .25, .5] });
 sections.forEach((section) => observer.observe(section));
 

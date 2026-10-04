@@ -650,4 +650,5 @@ footer::before {
     background-repeat: no-repeat;
   }
   .contact-panel { border-top: 0; }
+  .contact-action .cta-gold { color: #06316b; }
 }

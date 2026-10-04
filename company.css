@@ -13,6 +13,7 @@
 .company-profile a:hover { text-decoration: underline; }
 .company-consult { text-align: center; margin-top: 64px; padding: 40px 24px; background: #f3faff; border-radius: 8px; }
 .company-consult h2 { font: 700 26px/1.6 var(--serif); margin: 0 0 12px; }
+.company-consult .cta-gold { color: #06316b; }
 .company-home { display: block; width: fit-content; margin: 25px auto 0; font-size: 14px; }
 .mobile-break { display: none; }
 .company-page .footer-main nav a:first-child { border-bottom: 0; }

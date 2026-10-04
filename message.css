@@ -366,3 +366,92 @@ footer::before {
   .contact-action { padding-inline: 0; }
   .contact-action .cta { gap: 16px; }
 }
+
+/* Keep the expanded representative message readable without colliding with
+   the contact area in the desktop reference composition. */
+@media (min-width: 1181px) {
+  .message { height: 42vw; }
+  .president-copy {
+    left: 50vw;
+    top: 5.4vw;
+    width: 46vw;
+    font-size: clamp(13px, 1vw, 18px);
+    line-height: 1.55;
+    white-space: normal;
+  }
+  .president-message .signature {
+    left: 79vw;
+    top: 22.1vw;
+    width: auto;
+    font-size: clamp(22px, 1.65vw, 30px);
+  }
+  .signature small { font-size: clamp(12px, .9vw, 16px); }
+  .signature em { font-size: clamp(12px, .9vw, 16px); }
+  .contact-panel > div:first-child { top: 29vw; }
+  .contact-action { top: 28.5vw; }
+  .contact-panel .message-motto { top: 28.55vw; }
+}
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .message {
+    height: auto;
+    min-height: 0;
+    padding: 7vw 5vw 6vw;
+    background: #f1f9fc url("assets/message-bg.svg") center top / 100% auto no-repeat;
+  }
+  .message-top,
+  .contact-panel {
+    position: relative;
+    display: grid;
+    max-width: none;
+    margin: 0;
+  }
+  .message-top {
+    grid-template-columns: .9fr 1.1fr;
+    gap: 4vw;
+    margin-bottom: 5vw;
+  }
+  .message-top > .section-heading,
+  .president-copy,
+  .president-message .signature,
+  .contact-panel > div:first-child,
+  .contact-action,
+  .contact-panel .message-motto {
+    position: static;
+  }
+  .message .section-heading h2 {
+    font-size: clamp(34px, 4vw, 46px);
+    white-space: normal;
+  }
+  .president-copy {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    white-space: normal;
+  }
+  .president-message .signature {
+    width: fit-content;
+    margin: 18px 0 0 auto;
+  }
+  .contact-panel {
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    padding-top: 5vw;
+    border-top: 1px solid rgba(255,255,255,.95);
+  }
+  .contact-panel > div:first-child h2 {
+    font-size: clamp(28px, 3.2vw, 38px);
+    white-space: normal;
+  }
+  .contact-panel > div:first-child p {
+    white-space: normal;
+  }
+  .contact-action {
+    height: auto;
+    padding: 0 0 0 3vw;
+  }
+  .contact-action .cta {
+    width: 100%;
+  }
+  .message-motto { display: none; }
+}

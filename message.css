@@ -82,7 +82,7 @@
 footer {
   position: relative;
   overflow: hidden;
-  background: #fff url("assets/footer-bg.svg") center/100% 100% no-repeat;
+  background: #fff;
 }
 
 footer::before {
@@ -332,7 +332,7 @@ footer::before {
   }
   footer {
     height: 12.65vw; overflow: visible;
-    background: url("assets/contact-reference-bg.svg") left bottom / 100vw 50vw no-repeat;
+    background: #fff;
   }
   .footer-main { height: 9.85vw; max-width: none; padding: 0; display: block; }
   .footer-brand { position: absolute; left: 2.3vw; top: 1.6vw; min-width: 0; }

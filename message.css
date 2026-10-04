@@ -455,3 +455,199 @@ footer::before {
   }
   .message-motto { display: none; }
 }
+
+/* Readable, natural-flow composition for the expanded message and CTA. */
+@media (min-width: 761px) {
+  .message {
+    height: auto;
+    min-height: 0;
+    padding: clamp(52px, 5vw, 78px) clamp(38px, 5.2vw, 88px) clamp(54px, 5vw, 82px);
+    background-color: #f1f9fc;
+    background-image: url("assets/contact-reference-bg.svg");
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .message-top,
+  .contact-panel {
+    position: relative;
+    display: grid;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .message-top {
+    grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+    align-items: start;
+    gap: clamp(34px, 5vw, 90px);
+    margin-bottom: clamp(42px, 5vw, 76px);
+  }
+
+  .message-top > .section-heading,
+  .president-message,
+  .president-copy,
+  .president-message .signature,
+  .contact-panel > div:first-child,
+  .contact-action,
+  .contact-panel .message-motto {
+    position: static;
+    inset: auto;
+    width: auto;
+    max-width: none;
+  }
+
+  .message .section-heading h2 {
+    margin: 0;
+    font-size: clamp(38px, 3.15vw, 58px);
+    line-height: 1.34;
+    letter-spacing: 0;
+    white-space: normal;
+  }
+
+  .message .section-heading i {
+    width: clamp(100px, 8vw, 150px);
+    margin: 15px 0 8px;
+    border-top: 3px solid #ffba00;
+  }
+
+  .message .section-heading > span {
+    color: #8b9fc6;
+    font: 500 clamp(15px, 1.25vw, 21px)/1.8 var(--sans);
+    letter-spacing: .25em;
+  }
+
+  .president-message {
+    font-family: var(--sans);
+  }
+
+  .president-copy {
+    margin: 0;
+    font-size: clamp(15px, 1.12vw, 18px);
+    line-height: 1.9;
+    letter-spacing: 0;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .president-message .signature {
+    width: fit-content;
+    margin: 20px 0 0 auto;
+    text-align: center;
+    font: 700 clamp(25px, 2.1vw, 34px)/1.35 var(--serif);
+    white-space: nowrap;
+  }
+
+  .president-message .signature small {
+    color: #071f53;
+    font: 700 clamp(13px, 1vw, 16px)/1.5 var(--serif);
+  }
+
+  .president-message .signature em {
+    color: #899bc1;
+    font: 500 clamp(13px, 1vw, 16px)/1.5 var(--sans);
+  }
+
+  .contact-panel {
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, .85fr) auto;
+    align-items: center;
+    gap: clamp(28px, 3.5vw, 62px);
+    padding: 0;
+    border: 0;
+  }
+
+  .contact-panel > div:first-child h2 {
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    font: 700 clamp(31px, 2.85vw, 48px)/1.35 var(--serif);
+    white-space: normal;
+  }
+
+  .contact-panel > div:first-child h2::after {
+    content: "";
+    display: block;
+    width: clamp(95px, 7vw, 132px);
+    height: 4px;
+    margin-top: 10px;
+    background: #ffbe00;
+  }
+
+  .contact-panel > div:first-child p {
+    margin: 12px 0 0;
+    font: 400 clamp(16px, 1.45vw, 21px)/1.7 var(--serif);
+    white-space: normal;
+  }
+
+  .contact-action {
+    min-width: 0;
+    height: auto;
+    padding: 0 0 0 clamp(24px, 3vw, 52px);
+    border-left: 1px solid #b1bed6;
+    border-right: 0;
+    text-align: center;
+  }
+
+  .contact-action .cta {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    height: auto;
+    min-height: clamp(66px, 5.4vw, 86px);
+    margin: 0;
+    padding: 0 clamp(20px, 2.5vw, 42px);
+    gap: clamp(13px, 1.3vw, 22px);
+    background: linear-gradient(105deg, #ffbc00, #ffc000);
+    color: #06316b;
+    font: 700 clamp(18px, 1.65vw, 24px)/1.2 var(--sans);
+    white-space: nowrap;
+  }
+
+  .contact-mail-icon { width: 30px; height: 23px; }
+  .contact-action .cta span:last-child { font-size: 1.5em; line-height: 1; }
+  .contact-action b {
+    display: block;
+    margin: 12px 0 0;
+    font: 700 clamp(14px, 1.1vw, 17px)/1.5 var(--sans);
+    white-space: normal;
+  }
+
+  .contact-panel .message-motto {
+    display: block;
+    margin: 0;
+    padding-left: 22px;
+    border-left: 1px solid #b1bed6;
+    color: #889ec5;
+    font: 500 clamp(11px, .95vw, 14px)/1.65 var(--sans);
+    letter-spacing: .13em;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .message { padding: 58px 5vw 64px; }
+  .message-top {
+    grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr);
+    gap: 34px;
+    margin-bottom: 48px;
+  }
+  .message .section-heading h2 { font-size: clamp(34px, 4vw, 44px); }
+  .president-copy { font-size: 15px; line-height: 1.8; }
+  .contact-panel { grid-template-columns: minmax(0, 1fr) minmax(300px, .9fr); gap: 28px; }
+  .contact-panel > div:first-child h2 { font-size: clamp(28px, 3.2vw, 36px); }
+  .contact-panel .message-motto { display: none; }
+  .contact-action { padding-left: 26px; }
+}
+
+@media (max-width: 760px) {
+  .message {
+    background-image: url("assets/message-bg-mobile.svg");
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .contact-panel { border-top: 0; }
+}
